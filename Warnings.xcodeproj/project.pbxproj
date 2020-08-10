@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83F0AB224E1CB400049BE53 /* WarningsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F83F0AB124E1CB400049BE53 /* WarningsTests.m */; };
 		F8C0680923851E1F00FD0329 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C0680823851E1F00FD0329 /* AppDelegate.m */; };
 		F8C0680C23851E1F00FD0329 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C0680B23851E1F00FD0329 /* SceneDelegate.m */; };
 		F8C0680F23851E1F00FD0329 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C0680E23851E1F00FD0329 /* ViewController.m */; };
@@ -23,7 +24,20 @@
 		F8C068302385389100FD0329 /* AppCenterData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C0682D2385389100FD0329 /* AppCenterData.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F83F0AB424E1CB400049BE53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C067FC23851E1F00FD0329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C0680323851E1F00FD0329;
+			remoteInfo = Warnings;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F83F0AAF24E1CB400049BE53 /* WarningsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarningsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83F0AB124E1CB400049BE53 /* WarningsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WarningsTests.m; sourceTree = "<group>"; };
+		F83F0AB324E1CB400049BE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C0680423851E1F00FD0329 /* Warnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C0680723851E1F00FD0329 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C0680823851E1F00FD0329 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F83F0AAC24E1CB400049BE53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8C0680123851E1F00FD0329 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F83F0AB024E1CB400049BE53 /* WarningsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F83F0AB124E1CB400049BE53 /* WarningsTests.m */,
+				F83F0AB324E1CB400049BE53 /* Info.plist */,
+			);
+			path = WarningsTests;
+			sourceTree = "<group>";
+		};
 		F8C067FB23851E1F00FD0329 = {
 			isa = PBXGroup;
 			children = (
 				F8C0680623851E1F00FD0329 /* Warnings */,
+				F83F0AB024E1CB400049BE53 /* WarningsTests */,
 				F8C0680523851E1F00FD0329 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C0680423851E1F00FD0329 /* Warnings.app */,
+				F83F0AAF24E1CB400049BE53 /* WarningsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +147,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F83F0AAE24E1CB400049BE53 /* WarningsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F83F0AB624E1CB400049BE53 /* Build configuration list for PBXNativeTarget "WarningsTests" */;
+			buildPhases = (
+				F83F0AAB24E1CB400049BE53 /* Sources */,
+				F83F0AAC24E1CB400049BE53 /* Frameworks */,
+				F83F0AAD24E1CB400049BE53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F83F0AB524E1CB400049BE53 /* PBXTargetDependency */,
+			);
+			name = WarningsTests;
+			productName = WarningsTests;
+			productReference = F83F0AAF24E1CB400049BE53 /* WarningsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F8C0680323851E1F00FD0329 /* Warnings */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C0681D23851E2100FD0329 /* Build configuration list for PBXNativeTarget "Warnings" */;
@@ -141,6 +191,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = OlegMisal;
 				TargetAttributes = {
+					F83F0AAE24E1CB400049BE53 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F8C0680323851E1F00FD0329;
+					};
 					F8C0680323851E1F00FD0329 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -160,11 +214,19 @@
 			projectRoot = "";
 			targets = (
 				F8C0680323851E1F00FD0329 /* Warnings */,
+				F83F0AAE24E1CB400049BE53 /* WarningsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F83F0AAD24E1CB400049BE53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8C0680223851E1F00FD0329 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +240,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F83F0AAB24E1CB400049BE53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83F0AB224E1CB400049BE53 /* WarningsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8C0680023851E1F00FD0329 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +260,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F83F0AB524E1CB400049BE53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C0680323851E1F00FD0329 /* Warnings */;
+			targetProxy = F83F0AB424E1CB400049BE53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F8C0681023851E1F00FD0329 /* Main.storyboard */ = {
@@ -211,6 +289,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F83F0AB724E1CB400049BE53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				INFOPLIST_FILE = WarningsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.WarningsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Warnings.app/Warnings";
+			};
+			name = Debug;
+		};
+		F83F0AB824E1CB400049BE53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				INFOPLIST_FILE = WarningsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.WarningsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Warnings.app/Warnings";
+			};
+			name = Release;
+		};
 		F8C0681B23851E2100FD0329 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,6 +449,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Warnings/Vendor",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = Warnings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,6 +472,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Warnings/Vendor",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = Warnings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F83F0AB624E1CB400049BE53 /* Build configuration list for PBXNativeTarget "WarningsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F83F0AB724E1CB400049BE53 /* Debug */,
+				F83F0AB824E1CB400049BE53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8C067FF23851E1F00FD0329 /* Build configuration list for PBXProject "Warnings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
